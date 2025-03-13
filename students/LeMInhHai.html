@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân - Lê Minh Hải</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome cho biểu tượng -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/assets/css/stylelmh.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm" style="background: linear-gradient(90deg, #1a1a1a, #333);">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Lê Minh Hải</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">Giới thiệu</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#education">Học tập</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#skills">Kỹ năng</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#projects">Dự án</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#contact">Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 text-center" style="background: linear-gradient(135deg, #e0eafc, #cfdef3);">
+        <div class="container">
+            <img src="/assets/images/LeMinhHai.jpg" class="rounded-circle mb-4 shadow-lg" alt="Avatar" width="180">
+            <h1 class="fw-bold mb-3">Lê Minh Hải</h1>
+            <p class="lead">Sở thích: Lập trình, nghe nhạc, du lịch.</p>
+            <p class="lead">Định hướng: Trở thành kỹ sư chuyên sâu về lập trình ứng dụng di động.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Quá trình học tập</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 p-4">
+                        <h4 class="text-primary fw-semibold mb-3">Các môn học quan trọng</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Cấu trúc dữ liệu và giải thuật</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Lập trình hướng đối tượng</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Trí tuệ nhân tạo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card shadow-sm border-0 p-4">
+                        <h4 class="text-primary fw-semibold mb-3">Dự án thực hiện</h4>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Ứng dụng đặt vé máy bay (Flutter)</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Mô hình dự đoán thời tiết (Python)</li>
+                            <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i>Website quản lý đồ án</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5" style="background: linear-gradient(135deg, #e0eafc, #cfdef3);">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Kỹ năng</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 p-4 skill-card">
+                        <h5 class="fw-semibold text-primary mb-2">Lập trình</h5>
+                        <p>Python, Java, JavaScript</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 p-4 skill-card">
+                        <h5 class="fw-semibold text-primary mb-2">Thiết kế UI/UX</h5>
+                        <p>Figma, Adobe XD</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm border-0 p-4 skill-card">
+                        <h5 class="fw-semibold text-primary mb-2">AI/ML</h5>
+                        <p>TensorFlow, Scikit-learn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section (Slideshow) -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">Dự án cá nhân</h2>
+            <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/assets/images/project1.jpg" class="d-block w-100 rounded shadow-lg" alt="Project 1">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                            <h5 class="fw-semibold">Ứng dụng đặt vé máy bay</h5>
+                            <p>Tìm và chọn vé máy bay với giá ưu đãi nhất.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/project2.jpg" class="d-block w-100 rounded shadow-lg" alt="Project 2">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                            <h5 class="fw-semibold">Mô hình AI dự đoán</h5>
+                            <p>Dự đoán thời tiết dựa trên dữ liệu lịch sử.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/assets/images/project3.jpg" class="d-block w-100 rounded shadow-lg" alt="Project 2">
+                        <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded p-3">
+                            <h5 class="fw-semibold">Website quản lý đồ án</h5>
+                            <p>Quản lý đồ án đăng ký của sinh viên và phân công giảng viên</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-white text-center" style="background: linear-gradient(90deg, #1a1a1a, #333);">
+        <div class="container">
+            <h2 class="fw-bold mb-4">Liên hệ</h2>
+            <p class="lead mb-2">Email: <a href="mailto:hairlee462@gmail.com" class="text-white text-decoration-underline">hairlee462@gmail.com</a></p>
+            <p class="lead mb-4">GitHub: <a href="https://github.com/hairlee462" class="text-white text-decoration-underline">github.com/hairlee462</a></p>
+            <div class="social-icons">
+                <a href="https://github.com/hairlee462" class="text-white mx-3" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#" class="text-white mx-3"><i class="fab fa-linkedin fa-2x"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS và Custom JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+</body>
+</html>
