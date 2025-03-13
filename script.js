@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     const sections = document.querySelectorAll(".section-title");
     sections.forEach(section => {
@@ -10,8 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-// script.js
-document.addEventListener("DOMContentLoaded", function() {
+    // script.js
     // Cuộn mượt mà khi nhấp vào liên kết
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {
@@ -19,7 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
             e.preventDefault();
             const targetId = this.getAttribute("href").substring(1);
             const targetElement = document.getElementById(targetId);
-            targetElement.scrollIntoView({ behavior: "smooth" });
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: "smooth" });
+            }
         });
     });
 
