@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Nhóm Sinh Viên</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome (cho icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS tùy chỉnh -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-4 fixed-top shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Nhóm Sinh Viên Công Nghệ</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-yellow-300 transition-colors duration-300">Giới Thiệu</a></li>
+                <li><a href="#team" class="hover:text-yellow-300 transition-colors duration-300">Thành Viên</a></li>
+                <li><a href="#contact" class="hover:text-yellow-300 transition-colors duration-300">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="min-h-screen flex items-center bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-5xl font-bold text-blue-900 mb-6 animate__animated animate__fadeInDown">Chào Mừng Đến Với Nhóm Chúng Tôi</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto animate__animated animate__fadeInUp">
+                Chúng tôi là một nhóm sinh viên đam mê công nghệ, đến từ Gia Lai, Việt Nam. Nhóm chúng tôi chuyên tâm phát triển các ứng dụng di động và web với mục tiêu mang lại giá trị thực tiễn và sáng tạo cho cộng đồng.
+            </p>
+            <img src="assets/images/team-photo.jpg" alt="Ảnh nhóm" class="w-1/2 mx-auto rounded-lg shadow-lg mb-6">
+            <a href="#team" class="btn btn-primary py-3 px-6 rounded-full text-lg">Xem Thành Viên</a>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">Thành Viên Nhóm</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <!-- Thành viên 1: Đinh Huy -->
+                <div class="col">
+                    <a href="students/HoDinhHuy.html" class="text-decoration-none">
+                        <div class="card h-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <img src="assets/images/my-avatar.png" class="card-img-top rounded-circle mx-auto mt-4" alt="Đinh Huy" style="width: 150px; height: 150px; object-fit: cover; margin-top: 10px;">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title text-blue-900 font-bold text-xl">Đinh Huy</h5>
+                                <p class="card-text text-gray-600">Lập trình viên di động</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Thành viên 2 -->
+                <div class="col">
+                    <a href="students/phuc.html" class="text-decoration-none">
+                        <div class="card h-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <img src="assets/images/avatar_phuc.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Trần Thị B" style="width: 150px; height: 150px; object-fit: cover; margin-top: 10px;">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title text-blue-900 font-bold text-xl">Lư Trần Tấn Phúc</h5>
+                                <p class="card-text text-gray-600">Thiết kế UI/UX</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Thành viên 3 -->
+                <div class="col">
+                    <a href="students/LeMinhHai.html" class="text-decoration-none">
+                        <div class="card h-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <img src="assets/images/LeMinhHai.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Lê Văn C" style="width: 150px; height: 150px; object-fit: cover; margin-top: 10px;">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title text-blue-900 font-bold text-xl">Lê Minh Hải</h5>
+                                <p class="card-text text-gray-600">Lập trình viên Backend</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Thành viên 4 -->
+                <div class="col">
+                    <a href="students/nguyenminhhung.html" class="text-decoration-none">
+                        <div class="card h-100 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <img src="assets/images/nguyenminhhung.jpg" class="card-img-top rounded-circle mx-auto mt-4" alt="Phạm Thị D" style="width: 150px; height: 150px; object-fit: cover; margin-top: 10px;">
+                            <div class="card-body text-center p-4">
+                                <h5 class="card-title text-blue-900 font-bold text-xl">Nguyễn Minh Hùng</h5>
+                                <p class="card-text text-gray-600">Quản lý dự án</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-blue-900 mb-12">Liên Hệ Với Chúng Tôi</h2>
+            <p class="text-lg text-gray-700 mb-8">Nếu bạn muốn hợp tác hoặc có bất kỳ câu hỏi nào, hãy liên hệ với chúng tôi!</p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:team@example.com" class="text-blue-500 text-2xl hover:text-blue-700 transition-colors"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/team" class="text-blue-500 text-2xl hover:text-blue-700 transition-colors"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/team" class="text-blue-500 text-2xl hover:text-blue-700 transition-colors"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>© 2025 Nhóm Sinh Viên Công Nghệ. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
