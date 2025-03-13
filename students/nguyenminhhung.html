@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nguyễn Minh Hùng</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .section-slide {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .section-slide.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+    <!-- Header -->
+    <header class="container mx-auto px-6 py-12 text-center">
+        <div class="relative inline-block">
+            <img src="/assets/images/nguyenminhhung.jpg" alt="Nguyễn Minh Hùng"
+                class="w-32 h-32 rounded-full mx-auto border-4 border-white shadow-lg object-cover hover:scale-105 transition-transform duration-300">
+            <div
+                class="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 opacity-0 hover:opacity-20 transition-opacity duration-300">
+            </div>
+        </div>
+        <h1
+            class="text-4xl md:text-5xl font-bold mt-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+
+            NGUYỄN MINH HÙNG 
+
+        </h1>
+        <p class="text-gray-600 mt-2">MSSV: 2180608688</p>
+        <p class="text-gray-600 mt-1 max-w-2xl mx-auto">
+            Sở thích: Lập trình, nghe nhạc, game | Định hướng: Lập trình viên Full-stack
+        </p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 pb-20">
+        <!-- Education -->
+        <section class="section-slide bg-white rounded-2xl shadow-xl p-8 mb-8">
+            <h2 class="text-3xl font-semibold text-blue-600 mb-6">Quá trình học tập</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-medium text-gray-800">Các môn học quan trọng</h3>
+                    <p class="text-gray-600">• Lập trình hướng đối tượng - Java, OOP</p>
+                    <p class="text-gray-600">• Cơ sở dữ liệu - MySQL</p>
+                    <p class="text-gray-600">• Trí tuệ nhân tạo - Machine Learning, Python</p>
+                </div>
+                <div class="space-y-4">
+                    <h3 class="text-xl font-medium text-gray-800">Dự án thực hiện</h3>
+                    <p class="text-gray-600">• Website bán thiết bị điện tử</p>
+                    <p class="text-gray-600">• Website mạng xã hội</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section-slide bg-white rounded-2xl shadow-xl p-8 mb-8">
+            <h2 class="text-3xl font-semibold text-blue-600 mb-6">Kỹ năng đạt được</h2>
+            <ul class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <li class="bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors duration-300">
+                    <span class="font-medium">Lập trình:</span> HTML, CSS, JS, Java
+                </li>
+                <li class="bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors duration-300">
+                    <span class="font-medium">Thiết kế UI/UX:</span> Figma
+                </li>
+                <li class="bg-blue-50 p-4 rounded-lg hover:bg-blue-100 transition-colors duration-300">
+
+                    <span class="font-medium">AI/ML:</span> TensorFlow basics 
+
+                </li>
+            </ul>
+        </section>
+
+        <!-- Projects -->
+        <section class="section-slide bg-white rounded-2xl shadow-xl p-8 mb-8">
+            <h2 class="text-3xl font-semibold text-blue-600 mb-6">Dự án cá nhân</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-xl font-medium text-gray-800">Website Portfolio</h3>
+                    <p class="text-gray-600 mt-2">Trang cá nhân giới thiệu bản thân.</p>
+                    <p class="text-blue-600 mt-1">Công nghệ: HTML, CSS, GitHub Pages</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-xl font-medium text-gray-800">Ứng dụng quản lý đồ án</h3>
+                    <p class="text-gray-600 mt-2">Quản lý môn học và đăng ký đồ án.</p>
+                    <p class="text-blue-600 mt-1">Công nghệ: C#, HTML, CSS, GitHub</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-xl font-medium text-gray-800">Ứng dụng mạng xã hội</h3>
+                    <p class="text-gray-600 mt-2">Giao tiếp, đăng bài, tương tác.</p>
+                    <p class="text-blue-600 mt-1">Công nghệ: Java Spring Boot, ReactJS</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow duration-300">
+                    <h3 class="text-xl font-medium text-gray-800">Ứng dụng bán hàng</h3>
+                    <p class="text-gray-600 mt-2">Mua sắm đồ dùng cần thiết.</p>
+                    <p class="text-blue-600 mt-1">Công nghệ: Java Spring Boot, ReactJS</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section-slide bg-white rounded-2xl shadow-xl p-8">
+            <h2 class="text-3xl font-semibold text-blue-600 mb-6">Liên hệ</h2>
+            <div class="space-y-4 text-gray-600">
+                <p>Email: <a href="mailto:hungdran8032@gmail.com"
+                        class="text-blue-600 hover:underline">hungdran8032@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://linkedin.com/in/nguyenminhhung" class="text-blue-600 hover:underline"
+                        target="_blank">linkedin.com/in/nguyenminhhung</a></p>
+                <p>GitHub: <a href="https://github.com/hungdran8032" class="text-blue-600 hover:underline"
+                        target="_blank">github.com/hungdran8032</a></p>
+                <p>CV: <a href="[link-to-your-cv]" class="text-blue-600 hover:underline" target="_blank">Xem CV của
+                        tôi</a></p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-gray-500">
+        <p>Author: Nguyễn Minh Hùng</p>
+        <p>Author: Nguyễn Minh Hùng</p>
+        <p>Author: Nguyễn Minh Hùng</p>
+
+        <p>© 2025 Nguyễn Minh Hùng. All rights reserved.</p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Scroll animation for sections
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.section-slide');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+</html>
