@@ -6,44 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thông Tin Cá Nhân</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../style.css">
+
 </head>
-<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
-    <div class="container bg-white shadow-lg p-5 rounded" style="max-width: 1400px;">
-        <div class="row">
-            <!-- Cột trái: Thông tin cá nhân -->
-            <div class="col-lg-4 text-center border-end">
-                <img src="../assets/images/avatar_phuc.jpg" class="img-fluid rounded-circle mb-3" style="max-width: 80%;" alt="Avatar">
-                <h2 class="card-title">Lư Trần Tấn Phúc</h2>
-                <p class="card-text">Tuổi: 22</p>
-                <p class="card-text">Email: fuutanlu@gmail.com</p>
-                <p class="card-text">Địa chỉ: Vĩnh Thạnh, Cần Thơ</p>
+<body>
+    <div class="container container-custom d-flex p-3">
+        <!-- Cột trái: Thông tin cá nhân -->
+        <div class="col-lg-4 text-center border-end d-flex flex-column align-items-center justify-content-center p-3">
+            <img src="../assets/images/avatar_phuc.jpg" class="profile-pic mb-2" alt="Avatar">
+            <h3 class="fs-5">Lư Trần Tấn Phúc</h3>
+            <p class="fs-6 mb-1">Tuổi: 22</p>
+            <p class="fs-6 mb-1">Email: fuutanlu@gmail.com</p>
+            <p class="fs-6 mb-1">Địa chỉ: Vĩnh Thạnh, Cần Thơ</p>
+        </div>
+        <!-- Cột phải: Các mục khác -->
+        <div class="col-lg-8 d-flex flex-column justify-content-between p-2">
+            <div>
+                <h5 class="section-title fs-6">Sở thích</h5>
+                <p class="fs-6">Lập trình, Theo dõi các tin tức công nghệ, luyện tập, nghe nhạc</p>
             </div>
-            <!-- Cột phải: Các mục khác -->
-            <div class="col-lg-8">
-                <h4>Sở thích</h4>
-                <p class="card-text">Lập trình, Thiết kế UI/UX, Đọc sách công nghệ</p>
-                <h4>Định hướng nghề nghiệp</h4>
-                <p class="card-text">Trở thành Full-Stack Developer chuyên về AI/ML</p>
-                <h4>Quá trình học tập</h4>
-                <p class="card-text">Đã học các môn: Cấu trúc dữ liệu & Giải thuật, Lập trình Web, Machine Learning</p>
-                <p class="card-text">Dự án tiêu biểu: Website bán hàng, Mô hình nhận diện khuôn mặt</p>
-                <h4>Kỹ năng</h4>
-                <ul class="list-group">
-                    <li class="list-group-item">Lập trình: Python, JavaScript, C++</li>
-                    <li class="list-group-item">Thiết kế UI/UX: Figma, Adobe XD</li>
-                    <li class="list-group-item">AI/ML: TensorFlow, Scikit-learn</li>
+            <div>
+                <h5 class="section-title fs-6">Định hướng nghề nghiệp</h5>
+                <p class="fs-6">Trong tương lai phát triển thành Full-stack developer và định hướng trở thành Project Manager</p>
+            </div>
+            <div>
+                <h5 class="section-title fs-6">Quá trình học tập</h5>
+                <p class="fs-6">Các môn học quan trọng đã học: Cấu trúc dữ liệu và Giải Thuật, Công Nghệ Phần Mềm, Quản Lý Dự Án CNTT</p>
+                <p class="fs-6">Dự án tiêu biểu: Website bán hàng, Các mô hình quản lý, các web mạng xã hội</p>
+            </div>
+            <div>
+                <h5 class="section-title fs-6">Kỹ năng</h5>
+                <ul class="list-group list-group-flush fs-6">
+                    <li class="list-group-item">Lập trình: .Net, Angular, ASP.NET Core Web API, RabbitMQ, Redis Cache, PostgreSQL, .NET Aspire</li>
+                    <li class="list-group-item">Tool: Docker, Git, Github, Jira</li>
+                    <li class="list-group-item">Làm việc nhóm, làm việc độc lập</li>
                 </ul>
-                <h4>Dự án cá nhân</h4>
-                <p class="card-text">Hệ thống gợi ý sản phẩm bằng AI, Ứng dụng quản lý chi tiêu cá nhân</p>
-                <h4>Liên hệ</h4>
-                <p class="card-text">LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
-                <p class="card-text">GitHub: <a href="#">github.com/yourprofile</a></p>
-                <p class="card-text">CV: <a href="#">Download</a></p>
+            </div>
+            <div>
+                <h5 class="section-title fs-6">Dự án cá nhân</h5>
+                <p class="fs-6 fw-bold">Mạng Xã Hội Và Viết Truyện Memoirist</p>
+                <p class="fs-6">Website để giao lưu giữa các độc giả và tác giả viết tiểu thuyết mạng, cũng là nơi để mọi người có thể sáng tác và đăng tải các tác phẩm của bản thân lên mạng</p>
+            </div>
+            <div>
+                <h5 class="section-title fs-6">Liên hệ</h5>
+                <p class="fs-6">GitHub: <a href="https://github.com/TanfuuLu" target="_blank">github.com/TanfuuLu</a></p>
+                <p class="fs-6">SĐT: 0332545848</p>
             </div>
         </div>
     </div>
+    <script src="../script.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
